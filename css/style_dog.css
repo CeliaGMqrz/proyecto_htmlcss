@@ -135,6 +135,8 @@ h1.logo a {
 
 /* //logo */
 
+
+
 /* menu */
 ul#menu {
     position: fixed;
@@ -614,22 +616,46 @@ h4.numscroller {
 
 /* news */
 .news-grid-left h6 {
-    font-size: 20px;
+    font-size: 22px;
     color: #00adff;
     letter-spacing: 1px;
 }
 
 a.text-news-st {
-    color: #000;
-    font-size: 23px;
+    color: rgb(255, 116, 51);
+    font-size: 30px;
+    margin: 10px 0 12px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    display: inline-block;
+}
+ul {
+    list-style: none; /* Quitamos los marcadores */
+    padding: 0; /* Quitamos el padding por defecto de la lista */
+    margin-left: 10px; /* Separamos la lista de la izquierda */
+    color: rgb(255, 255, 255);
+    }
+    
+    li.personalizado::before { /* Añadimos contenido antes de cada elemento de la lista */
+    content: "\2022"; /* Insertamos el marcador */
+    padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+    color: #f97d42; /* Coloreamos la viñeta */
+    }
+
+.news-grid-left a:hover {
+    color: #00adff;
+}
+h6.news-grid-left {
+    color: #00adff;
+    font-size: 22px;
     margin: 10px 0 12px;
     text-decoration: none;
     letter-spacing: .5px;
     display: inline-block;
 }
 
-.news-grid-left a:hover {
-    color: #00adff;
+.color_text_cat{
+    color:rgb(255, 255, 255);
 }
 
 a.news-button {
@@ -1326,4 +1352,3 @@ h5.text-name-pop {
     }
 }
 
-/* //responsive */

@@ -645,6 +645,14 @@ ul {
 .news-grid-left a:hover {
     color: #00adff;
 }
+h6.news-grid-left {
+    color: #00adff;
+    font-size: 22px;
+    margin: 10px 0 12px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    display: inline-block;
+}
 
 .color_text_cat{
     color:rgb(255, 255, 255);
