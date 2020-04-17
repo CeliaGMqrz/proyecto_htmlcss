@@ -760,7 +760,7 @@ h5.text-name-pop {
 .contact-right textarea {
     border: 1px solid #ccc;
     font-size: 15px;
-    color: #000;
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     background: none;
     width: 100%;
@@ -810,7 +810,7 @@ h5.text-name-pop {
 
 .address-row h5 {
     font-size: 1.6em;
-    color: #000;
+    color: rgb(255, 255, 255);
     margin-bottom: .3em;
     font-weight: 300;
 }
