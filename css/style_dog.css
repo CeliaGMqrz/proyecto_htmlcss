@@ -63,10 +63,50 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
-ul,
-ol {
+ol.per {
+    list-style-type: none;
+    counter-reset: lista-personalizada;
     margin: 0;
-    padding: 0;
+    }
+
+    ol li.per {
+    color: white;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 5px 0 10px 50px;
+    margin-bottom: 15px;
+    background-color:black; filter:alpha(opacity=30); opacity:.6;
+    }
+
+    ol li:before {
+    content: counter(lista-personalizada);
+    counter-increment: lista-personalizada;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px 5px 10px;
+    background: orangered;
+    color: white;
+    height: 45px;
+    }
+
+.egt td {
+    color: rgb(255, 255, 255);
+    padding: .5em .8em;
+    border: 1px solid rgb(255, 119, 8);
+    background: rgb(0, 0, 0);
+    text-align: center;
+}
+.egt th {
+    padding: .5em .8em;
+    color: rgb(255, 115, 0);
+    border: 1px solid rgb(255, 115, 0);
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 
 a:focus,
@@ -1352,48 +1392,3 @@ h5.text-name-pop {
     }
 }
 
-    ol.per {
-        list-style-type: none;
-        counter-reset: lista-personalizada;
-        margin: 0;
-        }
-        
-        ol li.per {
-        color: white;
-        position: relative;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 25px;
-        padding: 5px 0 10px 50px;
-        margin-bottom: 15px;
-        background-color:black; filter:alpha(opacity=30); opacity:.6;
-        }
-        
-        ol li:before {
-        content: counter(lista-personalizada);
-        counter-increment: lista-personalizada;
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-weight: bold;
-        font-size: 20px;
-        padding: 10px 10px 5px 10px;
-        background: orangered;
-        color: white;
-        height: 45px;
-        }
-    
-    .egt td {
-        color: rgb(255, 255, 255);
-        padding: .5em .8em;
-        border: 1px solid rgb(255, 119, 8);
-        background: rgb(0, 0, 0);
-        text-align: center;
-    }
-    .egt th {
-        padding: .5em .8em;
-        color: rgb(255, 115, 0);
-        border: 1px solid rgb(255, 115, 0);
-        background: rgba(0, 0, 0, 0.25);
-        text-align: center;
-    }
