@@ -1352,3 +1352,33 @@ h5.text-name-pop {
     }
 }
 
+ol.per {
+    list-style-type: none;
+    counter-reset: lista-personalizada;
+    margin: 0;
+    }
+    
+    ol li.per {
+    color: white;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 5px 0 10px 50px;
+    margin-bottom: 15px;
+    background-color:black; filter:alpha(opacity=30); opacity:.6;
+    }
+    
+    ol li:before {
+    content: counter(lista-personalizada);
+    counter-increment: lista-personalizada;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px 5px 10px;
+    background: orangered;
+    color: white;
+    height: 45px;
+    }
