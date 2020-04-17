@@ -497,7 +497,11 @@ h3.tittle {
     background-size: cover;
     min-height: 400px;
 }
-
+.grid1-agile-new3 {
+    background: url(../images/model3.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 400px;
+}
 .inner-sub h3 {
     font-size: 40px;
     letter-spacing: 1px;
